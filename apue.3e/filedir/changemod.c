@@ -14,7 +14,7 @@ main(void)
 
 	/* set absolute mode to "rw-r--r--" */
 
-	if (chmod("bar", S_IRUSR | S_IWUSR | S_IRGRP | S_IROTH) < 0)
+	if (chmod("bar", S_IRUSR | S_IWUSR | S_IRGRP | S_IROTH) < 0) 
 		err_sys("chmod error for bar");
 
 	exit(0);
